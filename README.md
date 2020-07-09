@@ -62,6 +62,7 @@ After successful build of Job2 will trigger Job3 and it tests if the deployed co
  ![job3](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/job3.PNG)
 
 <h3>Build Pipeline</h3>
- ![pipeline](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/pipeline.PNG)
+
+ ![pipe](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/pipeline.PNG)
 
  
