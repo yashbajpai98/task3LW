@@ -35,7 +35,6 @@ Now, Launch a new container through this image of jenkins:v1 so that jenkins get
 -p 9999:8080 :  by exposing port we can access Jenkins server from http://localhost:9999
 For first time Jenkins will ask an Initial Admin Password which we can find in the running jenkins container :
 
- ![5](https://raw.githubusercontent.com/yashbajpai98/task2LW/master/task2-images/5.PNG)
  ![6](https://raw.githubusercontent.com/yashbajpai98/task2LW/master/task2-images/6.PNG)
  
  <h3>Job1(Copy Github Code)</h3> :
@@ -48,10 +47,10 @@ Whenever Developer pushes something new in Github, Job1 coppies the code from Gi
 Successful build of Job1 will trigger Job2 and it will launch the recpective pod for the code of the developer. Here I have taken example of webpages so I have used apache webserver. If the code is of HTML the pod will be launched of HTTPD image otherwise if the code is of PHP then pod will be launched with other image.
  ![job2](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/job2.PNG)
 
-SCRIPT1 for PHP code:
+SCRIPT1 for PHP code:<br>
  ![scp1](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/script2.PNG)
  
- SCRIPT2 for HTML code:
+ SCRIPT2 for HTML code:<br>
  ![scp2](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/script1.PNG)
  
 
@@ -61,5 +60,8 @@ SCRIPT1 for PHP code:
 
 After successful build of Job2 will trigger Job3 and it tests if the deployed container is working or not.It will be successfully built if the deployed container fails and then trigger Job4 for giving notification to the developer.
  ![job3](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/job3.PNG)
- If this fails then it again runs the job2.
+
+<h3>Build Pipeline</h3>
+ ![pipeline](https://raw.githubusercontent.com/yashbajpai98/task3LW/master/task3-images/pipeline.PNG)
+
  
